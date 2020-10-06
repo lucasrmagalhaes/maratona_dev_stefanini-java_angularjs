@@ -1,7 +1,6 @@
-# maratona-stefanini
-Maratona Stefanini
+# Maratona Stefanini
 
-## SEMANA 1 – DIA 1
+## Semana 01 - Dia 01
 
 ### Web Design vs Front-End
 - Interface visual, arquitetura de informações, a navegação, a usabilidade: ESTÁTICO
@@ -75,20 +74,20 @@ Maratona Stefanini
 
 ### Dúvidas (participantes):
 
-## Diferença entre Biblioteca e Framework?
+#### Diferença entre Biblioteca e Framework?
 - Biblioteca resolve algo específico.
 - Framework é composto por várias bibliotecas.
 
-## Descreva fluxo?
+#### Descreva fluxo?
 - Caminha que vai percorrer no Sistema.
 
-## Diferença entre Angular e AngularJS?
+#### Diferença entre Angular e AngularJS?
 - Responsáveis tentaram melhorar a ideia do Angular e mudou tanto que criaram o AngularJS.
 
-## DRY code tem como base a orientação?
+#### DRY code tem como base a orientação?
 - Seu pedaço de código não pode fazer a mesma coisa que outro código.
 
-## Defina escopo em JS?
+#### Defina escopo em JS?
 - Contexto da aplicação é o escopo.
 - É possível ter mais de uma aplicação no HTML?
 - Sim! É possível.
