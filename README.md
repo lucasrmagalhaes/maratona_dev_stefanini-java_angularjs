@@ -1,19 +1,3 @@
 # Maratona Stefanini
 
-## Semana 01 - Dia 01:
-#### - Web Design vs Front-End
-#### - UI 
-#### - UX
-#### - Aplicações WEB
-#### - Ferramentas e Frameworks
-#### - Boas práticas de programação
-#### - DRY code (Don’t Repeat Yourself)
-#### - Boas práticas de programação
-#### - Necessidade vs Mundo Perfeito
-#### - Angular JS
-#### - Uso das Diretivas
-#### - ngApp
-#### - DataBiding
-#### - NgController
-#### - Padrões de Projeto
-#### - Dúvidas (participantes)
+##### Semana 1 (AngularJS) - Dia 1: Web Design vs Front-End, UI, UX, Aplicações WEB, Ferramentas e Frameworks, Boas práticas de programação, DRY code (Don’t Repeat Yourself), Necessidade vs Mundo Perfeito, Angular JS, Uso das Diretivas, ngApp, DataBiding, ngController, Padrões de Projeto e Dúvidas (participantes).
