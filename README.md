@@ -17,7 +17,7 @@
 - Padrões de Projeto; e 
 - Dúvidas (participantes).
 
-### Semana 1 (AngularJS) - Dia 2
+### Semana 1 (AngularJS) - Dia 2:
 - Dicas: Cmder e Gitlens;
 - Metas: Git, controller/controllerAs, +diretivas do AngularJS, definição de escopos ($rootScope e $scope), Comand Line Interface (CLI), formulários, filtros e NPM/Grunt; e
 - Comandos GIT.
