@@ -168,3 +168,52 @@ Eduard Yourdon
 - sysout + CTRL + Space. -> Atalho para o System.out.print
 - Get e Set: Source -> Generate Getters and Setters ou Alt + Shift + S e selecionar a opção.
 - Herança - extends acoplamento muito forte. Tudo no pai vai impactar nos filhos.
+
+# Java - Back-end
+## Semana 2 - Dia 2
+
+### Prática:
+- Classe abstract não pode receber uma instância.
+- Cast - Polimofirsmo - Várias formas - Exemplo listar várias contas
+- instanceof verifica a origem.
+- Interface - implements cria métodos sem implementação e pode ter parametros.
+- Se implementar é obrigado a usar tudo que tem dentro dela é um contrato.
+- A classe é pública não é necessário informar porque é o padrão é público.
+- 1.5f indicando o valor.
+- Baratinha do Eclipse é o Debug. Dois cliques na linha para marcar e rodar o Debug.
+- F6 debuga linha a linha. F8 debuga tudo.
+- Enum campo que não vai precisar ser acessado para alterações. Exemplo: Status - Ativo e Inativo.
+- Collections - ArrayList e List. São listas.
+- Ctrl + Shift + O -> Remover imports que não estão sendo utilizados.
+
+### Mundo Web:  
+- Um mundo complexo porém resumido em duas palavras: Request - Requisição e Response - Resposta.
+
+Client -> HTTP request -> Server
+Client <- HTTP response <- Server 
+
+### Server:
+- Apache Tomcat
+
+O Tomcat é um servidor web Java, mais especificamente, um container de servlets. O Tomcat implementa, dentre outras de menor relevância, as tecnologias Java Servlet e JavaServer Pages. Desenvolvido pela Apache Software Foundation, é distribuído como software livre.
+
+### Prática - Tomcat:
+- Instalar o JDK 8.
+- Alterar no Eclipse -> Windows -> Preferences -> Installed JREs.
+- Window -> ShowView -> Other... Browser
+- Acessar: http://localhost:8080/
+- new -> Dynamic Web Project.
+- Marcar a opção: [x] Generate web.xml deployment descriptor -> alma do projeto.
+- Botão direito do mouse no projeto e ir em Build Path. 
+- Libraries confirmar a versão do JDK.
+- Project Facets -> Todas as versões utilzadas no projeto.
+- Web Project Settings -> Context root -> Nome da aplicação.
+- JavaResources -> New package: br.com.maratona.dev
+- Páginas HTML dentro do WebContent
+- WebContent -> new: index.html
+- Botão do direito do mouse no Tomcat inferior da tela e adicionar o projeto. Depois rodar um Clean.
+- http://localhost:8080/maratonaDev/
+- br.com.maratona.dev -> new Class: InscricaoMaratonaView
+- doGet - Ctrl + Space
+- http://localhost:8080/maratonaDev/inscricao -> "Maratona usando servelet"
+- JSF carregado no servidor. Angular carregado no browser.
