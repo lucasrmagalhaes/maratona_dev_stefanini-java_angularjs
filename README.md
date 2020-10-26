@@ -217,3 +217,67 @@ O Tomcat é um servidor web Java, mais especificamente, um container de servlets
 - doGet - Ctrl + Space
 - http://localhost:8080/maratonaDev/inscricao -> "Maratona usando servelet"
 - JSF carregado no servidor. Angular carregado no browser.
+
+# Java - Back-end
+## Semana 2 - Dia 3
+
+### REST
+
+Rest é acrônimo de Representational State Transfer, e tem como objetivo primário a definição de caractrísticas fundamentais para a construção de aplicações Web seguindo boas práticas.
+
+- Mesmo criador dos protócolos HTTP.
+- Evoluiu a forma de conectar no HTTP.
+
+### Maeven 
+
+Em um projeto nós temos problemas de:  
+
+- Gerenciamento de dependência.
+- Gerenciamento de projetos.
+- Controle de versão.
+- Automatizar o processo de build.
+
+Muitos outros problemas que existem que vão desde a fase de construção até o deploy em produção.
+
+Apache Maven, ou Maven, é uma ferramenta poderosa utilizada para gerenciar projetos, permitindo realizar builds, gerenciar dependências e até documentação do projeto. Ela é baseada no POM (project object model).
+
+### Prática:
+- Criando o maven: new -> other -> Maven Project -> [x] Create a simple project (skip archetype selection)
+- Group id: br.com.maratona.dev
+- Artifact id -> nome do projeto: dev
+- Version -> Versões de Teste -> Mudança de versão de forma drastica - ? - bugs
+- Verificar a versão do JRE.
+- maratonaDev -> Botão direito -> Configure -> Convert to Maven Project
+- WAR -> projeto web
+- Pegão varios arquivos e distribuem para o servidor:
+- EAR - Pode incorporar vários WAR ou vários projetos - modules.
+- JAR - Aplicações Desktop
+- WAR - Arquivo de Web
+
+- Direito -> Run -> Maven Run Build -> Abrirá a tela de comandos.
+- Goals: clean install -> deleta e gera um novo.
+- [x] Update Snapshots -> Obrigando o processo instalar as dependências.
+
+- Windows -> Preferences -> Workspace -> Other: ISO-8859-1
+
+- REST devolve os servlets configurados no web.xml
+- Dependências do Jsery: https://mvnrepository.com/
+- genson -> converte o JSON para o Java.
+
+- Plugin Rested mesma função do Swagger
+- 200 OK
+- 201 Created
+
+- ULR != URI
+
+### REST:
+- POST: Geralmente formulários -> Mandar um recurso novo
+- GET: Qualquer informação da URL
+- PUT: Alterar
+- DELETE: Remover
+
+- PathParam é um alias - apelido
+- equals comparar valores.
+
+### Mock
+- Lockando os dados
