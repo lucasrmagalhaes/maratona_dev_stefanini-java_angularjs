@@ -281,3 +281,44 @@ Apache Maven, ou Maven, é uma ferramenta poderosa utilizada para gerenciar proj
 
 ### Mock
 - Lockando os dados
+
+# Java - Back-end
+## Semana 2 - Dia 4
+
+Criar o arquivo context.xml dentro de META-INF -> Pega todas as entidades - classes e passa a gerenciar - guardar para ele.
+Criar o arquivo beans.xml dentro de WEB-INF
+
+- resources -> arquivos de configuração.
+
+### JUnit
+- Teste Unitários
+- After, Before e Test.
+- Garante mais segurança e proteção.
+
+### Mockito
+- Framework de mocks - injections.
+- Mock cria um espelho do projeto, vazio.
+
+### Eclipse - coverage:
+- Botão direito ou Barra superior -> coverage -> relatório dos testes.
+
+### Exception:
+Carregar os erros de execução em try catch.
+Evitando carregar para o usuário o console.log.
+Erros que o compilador não pega.
+
+### RESTED:
+
+Extensão do browser: RESTED Client
+Tomcat: http://localhost:8080/maratonaDev/rest/inscricao/find/inscrito/1
+
+GET
+
+Content-Type
+application/json
+
+200
+{
+  "matricula": 1,
+  "nome": "Lucas"
+}
