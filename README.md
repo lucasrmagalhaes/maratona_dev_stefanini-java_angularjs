@@ -426,3 +426,66 @@ https://start.microprofile.io/
 - http://localhost:8080/
 - http://localhost:8080/api/hello
 - Projeto real maioria das vezes é utilizado RequestScoped
+
+# Quarkus - Cloud
+## Semana 3 - Dia 2
+
+### Mapeando uma entidade - JPA
+- @Table
+- @Entity
+- @ManyToOne
+- @Column
+
+https://docs.oracle.com/javaee/7/api/javax/persistence/package-summary.html
+
+### Explicando Relações
+- @OneToMany
+- @ManyToOne
+- @ManyToMany
+
+Exemplo:
+@OneToMany
+Book -> Pages
+
+### Explicando IDs
+- @ID
+- @GeneratedValue -> Estratégia de Incremento.
+
+### Explicando NamedNativeQueries
+- @NamedNativeQueries
+- @NamedNativeQuery
+
+### Enum:
+- Lista pequena
+- Não pode sofrer alteração com o passar do tempo
+- Geralmente é status
+
+### Prática:
+
+https://code.quarkus.io/
+
+- H2: ./mvnw quarkus:add-extension -Dextensions="io.quarkus:quarkus-jdbc-h2"
+- Hibernate ORM: ./mvnw quarkus:add-extension -Dextensions="io.quarkus:quarkus-hibernate-orm"
+- http://localhost:8080/api/todo
+
+
+### Swagger
+- Desenvolvimento baseado em open API Especification
+- Permite que escreva uma estrutura de API
+- Consegue ler uma documentação e gerar uma API
+- ./mvnw quarkus:add-extension -Dextensions="io.quarkus:quarkus-smallrye-openapi"
+
+http://localhost:8080/swagger-ui/
+
+### Flyway
+- Versionamento de Banco de Dados através de códigos.
+
+https://flywaydb.org/
+
+### JAEGER
+
+./mvnw quarkus:add-extension -Dextensions="smallrye-opentracing"
+https://hub.docker.com/r/jaegertracing/all-in-one
+
+- Profiles:
+./mvnw quarkus:dev -Dquarkus.profile=dev
