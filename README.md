@@ -322,3 +322,107 @@ application/json
   "matricula": 1,
   "nome": "Lucas"
 }
+
+# Quarkus - Cloud
+## Semana 3 - Dia 1
+
+### Tópicos:
+- Introdução ao Quarkus
+- Modelagem
+- CRUD
+- Docker
+- Kubernetes
+
+### DevOps
+
+- Comunicação;
+- Colaboração;
+- Automação; e
+- Monitoração.
+
+Ele diz respeito à adequação de processo de desenvolvimento (Dev) e operação (Ops), com o objetivo de estimular o progresso contínuo no seu negócio na área de T.I.
+O conceito surgiu no ano de 2008, quando o administrador de sistemas Patrick Debois começou uma discussão sobre a possibilidade de solucionar os conflitos constantes entre as áreas de desenvolvimento e operações de TI.
+
+### Na prática:
+
+DevOps é uma estratégia que deve ser aplicada de modo contínuo e funciona da seguinte forma, seguindo essas etapas:
+
+- Plan
+- Code
+- Build
+- Test
+- Release
+- Deploy
+- Operate
+- Monitor
+
+### Vantages:
+
+Entretanto, por que aplicar o Dev Ops?
+- Redução de custos
+- Automação
+- Cultura de empresa atualizada
+- Torna a empresa mais escalonável
+- É uma revolução nos modos de exercer funções de TI
+
+### Quarkus - Supersonic
+
+- Imperative -> Inject
+- Reactive -> Channel
+
+- Red Hat - Principal desenvolvedora
+- Projeto de código aberto.
+
+O que é?
+O Quarkus é um framework, nativo do Kubernets, adaptado para OpenJDK HotSpot e GraalVM
+
+https://quarkus.io/
+
+### Como funciona?
+
+Microprofile Eclipse:
+- Jax-RS
+- CDI
+- JSON-P
+
+https://start.microprofile.io/
+
+### GraalVM
+
+- Máquina Virtual Poligrota
+- Oracle é a responsável.
+- Pega o código e vira nativo e pode rodar diretamente. 
+
+https://graalvm.org/
+
+### Extensões:
+
+Pense nas extensões como dependências do seu projeto, as extensões configuram, inicializam e integram as estruturas.
+Eles também fazem todo o trabalho de fornecer as informações corretas para o GraalVM e seu app rode nativamente.
+
+https://code.quarkus.io/
+
+### Teste de Integração
+- Testa o fluxo.
+
+### Estrutura do Projeto:
+- dao - conexão com o banco de dados. insert, delete... acesso aos objetos.
+- dto -  trafegar os dados, camada back com qualquer outra camada back ou front, objeto de transição.
+- model - entidades.
+- rest - requisições. pacote com os nossos serviços - endpoints.
+- service - validação e regra de negócio. arquivo que vai prover serviços. 
+
+### Microprofile
+https://start.microprofile.io/
+
+### Importando o Projeto:
+- Botão direito do mouse - Import - Existing Maven
+
+### Extensão - Eclipse:
+- Help -> Eclipse Marketplace -> Quarkus Tool
+
+### Rodando o projeto:
+- ./mvnw quarkus:dev
+- http://localhost:8080/
+- http://localhost:8080/api/hello
+- Projeto real maioria das vezes é utilizado RequestScoped
