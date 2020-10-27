@@ -1,0 +1,4 @@
+br\com\maratona\dev\resource\Pessoa.class
+br\com\maratona\dev\InscricaoMaratonaView.class
+br\com\maratona\dev\resource\InscricaoHelper.class
+br\com\maratona\dev\resource\InscricaoMaratonaResource.class
