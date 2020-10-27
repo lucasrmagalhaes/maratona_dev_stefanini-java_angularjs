@@ -22,7 +22,5 @@ public class Pessoa {
 	}
 	public void setMatricula(Integer matricula) {
 		this.matricula = matricula;
-	}
-	
-	
+	}	
 }
