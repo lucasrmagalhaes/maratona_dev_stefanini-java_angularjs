@@ -489,3 +489,77 @@ https://hub.docker.com/r/jaegertracing/all-in-one
 
 - Profiles:
 ./mvnw quarkus:dev -Dquarkus.profile=dev
+
+# Quarkus - Cloud
+## Semana 3 - Dia 3
+
+### Docker
+- Desenvolvido na linguagem GO.
+- Alta perfomance
+
+### Funcionalidades
+
+Client:
+docker build
+docker pull
+docker run
+
+DOCKER_HOST
+Docker daemon
+Container -> Imagem rodando.
+Images -> Configurações prontas. 
+
+Registry
+
+### Benefícios
+- Rapidez
+- Até 7 vezes mais rápido que a virtualização
+
+### Camadas e controle de versão de imagens
+- Cada cointainer pode receber uma configuração/versão, evitando conflitos.
+- Docker vem com Linux.
+
+### Hibernate Validator
+
+- Evita usar regras por exemplo com IF e utiliza somente o atalho do Hibernate.
+
+@NotNull
+@Size(min = 2, max = 14)
+@Min(2)
+@PastOrPresent
+
+docker run -d --name jaeger \
+  -e COLLECTOR_ZIPKIN_HTTP_PORT=9411 \
+  -p 5775:5775/udp \
+  -p 6831:6831/udp \
+  -p 6832:6832/udp \
+  -p 5778:5778 \
+  -p 16686:16686 \
+  -p 14268:14268 \
+  -p 14250:14250 \
+  -p 9411:9411 \
+  jaegertracing/all-in-one:1.20
+
+docker ps -> todos os serviços listados
+docker images -> imagens localmente
+docker rm imagem -> remover uma imagem
+
+localhost:16686/
+
+OpenTracing -> Ver por onde a aplicação passou.
+./mvnw quarkus:add-extension -Dextensions="smallrye-opentracing"
+
+Parar a aplicação
+docker ps
+docker stop nome ou id
+
+Startar 
+docker start nome ou id
+
+Validation with Hibernate Validator
+./mvnw quarkus:add-extension -Dextensions="hibernate-validator"
+
+### Panache
+
+O Panache é responsável por gerenciar toda a transação, desde da abertura, commit e o fechamento da transação.
+A ideia é facilitar a implementação, melhorando assim a produtividade, já que o código fica bem mais simples, se comparado a forma tradicional.
