@@ -96,6 +96,41 @@
 #### É possível ter mais de uma aplicação no HTML?
 - Sim! É possível.
 
+# AngularJS - Front-end
+## Semana 1 - Dia 2
+
+### Dica: 
+- Windows: Instalar o Cmder.
+- VisualStudio: Extensão – Instalar o Gitlens.
+
+### Metas do Dia 2:
+- Git;
+- Controller/ControllerAs;
+- +Diretivas do AngularJS;
+- Definição de Escopos ($rootScope e $scope): Em case prático: Lista de Tarefas App;
+- Comand Line Interface (CLI);
+- Formulários;
+- Filtros;
+- NPM / Grunt: Em casa Prático: Login App; e
+- $scope e $rootScope: Escopo Global.
+
+### GIT
+- É um sistema de controle de versão distribuído de código aberto gratuito projetado para lidar com tudo, desde projetos pequenos a muito grandes com velocidade e eficiência.
+
+- git remote: Lista os endereços remotos para subir o projeto.
+- git status: Lista os documentos que foram alterados.
+- git add: Adicionar um arquivo, pasta ou ambos (“git add -a” ou “git add .”) 
+- git restore --staged: Voltar o arquivo para o Working Directory. 
+- git commit -m “Descrever o commit” 
+- git push: Subindo o histórico para o remoto.
+- git push origin dia-1 (branch)
+- git clone url: Clonar o projeto localmente. (HTTPS) ou via SSH que necessita configuração.
+- .gitignore: Consegue dizer quais os arquivos que o GIT não acompanhe. Só adicionar o nome do arquivo que desejar ignorar dentro do .gitignore.
+- git branch: Lista as branches.
+- git branch dia-2-lista-tarefas: Criou uma nova branch.
+- git checkout nomedabranch: Muda de branch.
+- git push -u origin nomedabranch ou git push --set-upstream origin nomedabranch -> Comando para setar novos pushs. Sendo necessário na próxima vez rodar somente: git push.
+
 # AngularJS - Front-end 
 ## Semana 1 - Dia 3
 
