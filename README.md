@@ -195,6 +195,8 @@
 
 # AngularJS - Front-end
 ## Semana 1 - Dia 5
+- Instalando o Karma CLI no Modo Global: npm i karma-cli -g
+- Rodar os testes com o Karma: karma start karma.conf.js
 - Código finalizado.
 
 # Java - Back-end
