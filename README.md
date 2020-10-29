@@ -96,6 +96,51 @@
 #### É possível ter mais de uma aplicação no HTML?
 - Sim! É possível.
 
+# AngularJS - Front-end 
+## Semana 1 - Dia 3
+
+### Metas do Dia:
+- NPM / Grunt;
+- Formulários;
+- Filtros;
+- Modularizar / Organizar Projeto;
+- Rotas;
+- Services e Factories; e
+- Integração com Back-End - Em case Prático: Lista Compras App.
+
+### NPM
+- É um gerenciador de pacotes para a linguagem de programação JS. npm, Inc. é uma subsidiária do GitHub, uma corporação multinacional americana que fornece hospedagem para desenvolvimento de software e controle de versão com o uso do GIT.
+- npm init -y -> Inicializando o projeto.
+
+- npm i e npm un -> Instalação e desinstalação.
+- Site: https://www.npmjs.com -> Procurar pacotes.
+- npm i grunt grunt-contrib-clean grunt-contrib-connect grunt-contrib-copy grunt-contrib-cssmin grunt-contrib-uglify grunt-contrib-watch
+- contrib-clean -> Apagar pasta ou arquivos.
+- contrib-connect -> Criar um servidor para rodar nossa aplicação.
+- contrib-copy -> Copiar arquivos.
+- contrib-cssmin -> Minificações de CSS.
+- contrib-uglify -> Minificações de arquivos JS.
+- contrib-watch -> Lendo o código que estamos escrevendo e execuntado tarefas caso tiver mudanças. Atualiza nosso navegador automaticamente.
+
+### package.json
+- dependencies -> Obrigatórios para o projeto funcionar.
+- devDependencies -> Só para Desenvolvimento.
+
+### Grunt
+- É um executor de tarefas JS, uma ferramenta usada para executar automaticamente tarefas frequentes, como manificação, compilação, teste de unidades e fiapos. Ele usa uma interface de linha de comandos para executar tarefas personalizadas definidas em um arquivo.
+- Fonte: https://gruntjs.com/
+- Mais simples que o Gulp.
+- npm i grunt-cli --global -> Com essa instalação é possível rodar os comandos do Grunt em qualquer lugar da máquina.
+- npm i grunt-cli --save-dev -> Dependência de Desenvolvimento.
+- npm un grunt-cli -> Desinstalando o grunt-cli.
+
+### Gruntfile.js
+- copy:dist -> Usa a tarefa dist dentro de copy, não rodando todas as tarefas dentro de copy.
+- src: ['**/**.html'] -> Pega todas as pastas e arquivos html.
+- cwd -> Caminho base.
+- dest -> Nome da pasta que os arquivos fiquem copiados.
+- expand -> Recursividade entre as pastas.
+
 # AngularJS - Front-end
 ## Semana 1 - Dia 4
 
@@ -112,6 +157,10 @@
 
 ### $http
 - Faz requisições por exemplo de uma API.
+
+# AngularJS - Front-end
+## Semana 1 - Dia 5
+- Código finalizado.
 
 # Java - Back-end
 ## Semana 2 - Dia 1
