@@ -96,6 +96,23 @@
 #### É possível ter mais de uma aplicação no HTML?
 - Sim! É possível.
 
+# AngularJS - Front-end
+## Semana 1 - Dia 4
+
+### Metas do Dia:
+- Modularizar / Organizar Projeto;
+- Rotas / Navegação;
+- Integração com Back-End (API);
+- Diretivas;
+- Componentes; e 
+- Em case prático: Lista Compras App.
+
+### Angular Route
+- npm i angular-route
+
+### $http
+- Faz requisições por exemplo de uma API.
+
 # Java - Back-end
 ## Semana 2 - Dia 1
 
