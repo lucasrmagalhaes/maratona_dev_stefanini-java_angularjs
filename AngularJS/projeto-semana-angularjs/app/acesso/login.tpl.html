@@ -1,0 +1,39 @@
+<!-- ### LOGIN FORM ### -->
+<div ng-controller="AcessoController as vm" class="row justify-content-center align-items-center login-row">
+    <div class="col">
+        <div class="mx-auto py-5 mt-5 jumbotron" style="width: 500px;">
+            <h3 class="text-center text-uppercase">Login</h3>
+            <form name="vm.loginForm" ng-submit="vm.logar()">
+                <div class="form-group">
+                    <label>Username</label>
+                    <input class="form-control" type="text" name="username" ng-model="vm.login.username"
+                           ng-required="true" placeholder="Username" ng-pattern="vm.alerta()">
+                    <small ng-show="vm.loginForm.username.$error.pattern && vm.validar"
+                           class="form-text text-danger">
+                        Campo obrigatório!
+                    </small>
+                </div>
+                <div class="form-group">
+                    <label>Senha</label>
+                    <input class="form-control" type="password" name="password" ng-model="vm.login.password"
+                           ng-required="true" placeholder="Senha">
+                    <small ng-show="vm.loginForm.password.$error.required && vm.validar"
+                           class="form-text text-danger">
+                        Campo obrigatório!
+                    </small>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <button class="btn btn-primary mb-1" type="submit">
+                        Login
+                    </button>
+                    <span>
+                        Não tem uma conta?
+                        <a class="text-info c-pointer ml-2" ng-click="vm.go('/register')">
+                            Cadastrar
+                        </a>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

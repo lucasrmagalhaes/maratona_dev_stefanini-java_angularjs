@@ -1,0 +1,24 @@
+<div ng-controller="ItensController as vm" class="container" ng-init="vm.iniciar()">
+    <div class="d-flex justify-content-between align-items-center">
+        <h2>{{ page | capitalize }}</h2>
+    </div>
+    <hr>
+
+    <div class="row">
+        <div class="col-3" ng-repeat="item in vm.listaItens">
+            <div class="card text-center mb-4">
+                <img class="card-img-top img-fluid" src="{{item.imgUrl}}" alt="{{item.name}}">
+                <div class="card-body">
+                    <h5 class="card-title">{{item.name}}</h5>
+                    <strong class="text-muted mr-1">Categoria: </strong>
+                    <span class="badge badge-primary badge-pill">
+                        {{item.category}}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ng-hide="vm.listaItens.length" class="alert alert-info">
+        Nenhuma item cadastradado.
+    </div>
+</div>

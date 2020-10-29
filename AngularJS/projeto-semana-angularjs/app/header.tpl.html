@@ -1,0 +1,66 @@
+<!-- ### BARRA NEVAGAÇÃO ### -->
+<nav ng-controller="HeaderController as vm" ng-init="vm.iniciar()"
+     class="navbar navbar-expand-lg navbar-dark bg-primary py-2 px-5 mb-3">
+    <i class="material-icons md-36 mr-1" aria-hidden="true">shopping_cart</i>
+    <a class="navbar-brand">ListaCompras App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link c-pointer" ng-click="vm.go('/home')"
+                   ng-class="{'active': page === 'home'}">
+                    Home
+                </a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link c-pointer" ng-click="vm.serviceF()" ng-class="{'active': vm.logado}">
+                    Service ?
+                </a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link c-pointer" ng-click="vm.go('/categorias')"
+                   ng-class="{'active': page === 'categorias'}">Categorias</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link c-pointer" ng-click="vm.go('/itens')"
+                   ng-class="{'active': page === 'itens'}">Itens</a>
+            </li>
+            <div class=" nav-item dropdown">
+                <a class="nav-link dropdown-toggle" role="button" id="navbarDropdown" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Gerenciar
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item c-pointer" ng-click="vm.go('/gerenciar/itens')">Itens</a>
+                    <a class="dropdown-item c-pointer"
+                       ng-click="vm.go('/gerenciar/categorias')">Categorias</a>
+                </div>
+            </div>
+        </ul>
+        <ul class="navbar-nav mr-0">
+            <li class="nav-item">
+                <a class="nav-link c-pointer" ng-show="userLogged" ng-click="vm.logout()">
+                    <!-- ng-style="vm.ativo ? {'color':'#fff'} : {}" -->
+                    <!-- ng-class="{'nomeClasse': vm.ativo }" -->
+                    Logout
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link c-pointer" ng-hide="userLogged" ng-click="vm.go('/login')"
+                   ng-class="{'active': page === 'login'}">
+                    Login
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link c-pointer" ng-hide="userLogged" ng-click="vm.go('/register')"
+                   ng-class="{'active': page === 'register'}">
+                    Register
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

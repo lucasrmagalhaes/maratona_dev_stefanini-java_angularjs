@@ -1,0 +1,9 @@
+<div id="alertas" class="container" ng-show="listaMensagens.length">
+    <div ng-repeat="msg in listaMensagens" class="alert alert-{{msg.tipo}}" role="alert">
+        {{msg.text}} {{msg.acao}}
+        <button type="button" class="close" aria-label="Close" ng-click="listaMensagens.splice($index, 1)">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+</div>
+<h1>{{vm.teste}}</h1>

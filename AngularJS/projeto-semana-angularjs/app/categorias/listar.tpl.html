@@ -1,0 +1,16 @@
+<div ng-controller="CategoriasController as vm" class="container" ng-init="vm.iniciar()">
+    <div class="d-flex justify-content-between align-items-center">
+        <h2>{{ page | capitalize }}</h2>
+    </div>
+    <hr>
+
+    <div ng-show="vm.listaCategorias.length" class="list-group">
+        <a ng-click="vm.detalhar()" ng-repeat="cat in vm.listaCategorias"
+           class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            {{cat.title}}
+            <span class="badge badge-primary badge-pill">{{cat.qtdItens}}</span>
+        </a>
+    </div>
+    <div ng-hide="vm.listaCategorias.length" class="alert alert-info">Nenhuma categoria cadastrada.
+    </div>
+</div>

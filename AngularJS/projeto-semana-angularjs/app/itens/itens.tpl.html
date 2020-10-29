@@ -1,0 +1,39 @@
+<div ng-controller="ItensController as vm" class="container" ng-init="vm.iniciar()">
+    <div class="d-flex justify-content-between align-items-center">
+        <h2>{{ page }}</h2>
+    </div>
+    <hr>
+
+    <div ng-show="vm.listaItens.length" class="list-group">
+        <table class="table">
+            <thead class="table-active">
+                <tr>
+                    <th scope="col" width="20%">Nome</th>
+                    <th scope="col" width="60%">Categoria</th>
+                    <th scope="col"> </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in vm.listaItens">
+                    <td>{{item.name}}</td>
+                    <td>{{item.category}}</td>
+                    <td>
+                        <button type="button" class="btn btn-link mr-2" ng-click="vm.irEditar(item)">
+                            Edit
+                        </button>
+                        <button type="button" class="btn btn-link text-danger"
+                                ng-click="vm.deletar(item._id)">
+                            Del
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div ng-hide="vm.listaItens.length" class="alert alert-info">
+        Nenhum item cadastrada. Adicione novos itens no botão abaixo.
+    </div>
+    <p>
+        <a ng-click="vm.go('/gerenciar/itens/new')" class="btn btn-primary">Add Item</a>
+    </p>
+</div>

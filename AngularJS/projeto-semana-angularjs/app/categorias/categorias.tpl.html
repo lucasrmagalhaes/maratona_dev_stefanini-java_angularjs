@@ -1,0 +1,38 @@
+<div ng-controller="CategoriasController as vm" class="container" ng-init="vm.iniciar()">
+    <div class="d-flex justify-content-between align-items-center">
+        <h2>{{ page }}</h2>
+    </div>
+    <hr>
+
+    <div ng-show="vm.listaCategorias.length" class="list-group">
+        <table class="table">
+            <thead class="table-active">
+                <tr>
+                    <th scope="col" width="20%">Titulo</th>
+                    <th scope="col" width="60%">Descrição</th>
+                    <th scope="col"> </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="cat in vm.listaCategorias">
+                    <td>{{cat.title}}</td>
+                    <td>{{cat.desc}}</td>
+                    <td>
+                        <button type="button" class="btn btn-link mr-2" ng-click="vm.irEditar(cat)">
+                            Edit
+                        </button>
+                        <button type="button" class="btn btn-link text-danger" ng-click="vm.deletar(cat._id)">
+                            Del
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div ng-hide="vm.listaCategorias.length" class="alert alert-info">
+        Nenhuma categoria cadastrada. Adicione novas categorias no botão abaixo.
+    </div>
+    <p>
+        <a ng-click="vm.go('/gerenciar/categorias/new')" class="btn btn-primary">Add categoria</a>
+    </p>
+</div>

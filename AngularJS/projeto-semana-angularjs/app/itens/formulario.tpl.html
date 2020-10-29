@@ -1,0 +1,31 @@
+<div ng-controller="ItensController as vm" class="container" ng-init="vm.iniciar()">
+    <div class="d-flex justify-content-between align-items-center">
+        <h2>{{ page }}</h2>
+    </div>
+    <hr>
+    <form name="vm.form" ng-submit="vm.submit()">
+        <div class="form-group">
+            <label>Nome</label>
+            <input class="form-control" type="text" name="name" placeholder="Nome" ng-model="vm.item.name">
+        </div>
+        <div class="form-group">
+            <label>URL da Imagem</label>
+            <input class="form-control" type="text" name="imgUrl" placeholder="Descrição"
+                   ng-model="vm.item.imgUrl">
+        </div>
+        <div class="form-group">
+            <label>Categoria</label>
+            <select class="form-control" ng-model="vm.item.category" name="category"
+                    ng-options="cat.title as cat.title for cat in vm.listaCategorias">
+                <option value="">
+                    Selecione...
+                </option>
+            </select>
+        </div>
+        <button class="btn btn-primary" type="submit">Salvar</button>
+    </form>
+    <br>
+    <p>
+        <a ng-click="vm.go('/gerenciar/itens')" class="text-info c-pointer">Voltar</a>
+    </p>
+</div>
