@@ -666,3 +666,14 @@ Validation with Hibernate Validator
 
 O Panache é responsável por gerenciar toda a transação, desde da abertura, commit e o fechamento da transação.
 A ideia é facilitar a implementação, melhorando assim a produtividade, já que o código fica bem mais simples, se comparado a forma tradicional.
+
+# Quarkus - Cloud
+## Semana 3 - Dia 4 e 5
+
+### Kubernets:
+minikube
+https://github.com/kubernetes/minikube
+
+### Git:
+- git config --global user.name "Lucas Magalhães"
+- git config --global user.email "lucasdarosa.ti@gmail.com"
